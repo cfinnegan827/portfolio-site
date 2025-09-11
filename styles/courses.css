@@ -1,0 +1,97 @@
+body{
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.filler-bar{
+    background-color: #FF7A30;
+    height: 1px;
+    width: 60%;
+}
+
+.title-div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    padding: 0 1rem;
+}
+
+.link{
+    position: absolute;
+    right: 1rem;
+}
+
+.link:nth-child(3) {
+    right: 4rem;
+}
+
+.title{
+    color: #465C88;
+    text-align: center;
+    font-size: clamp(2rem, 8vw, 5rem);
+}
+.home-box{
+    border: 2px solid #FF7A30;
+    padding: 10px;
+    position: absolute;
+    left: 5%;
+}
+.home{
+    text-decoration: none;
+    color: #465C88;
+}
+
+.posts{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 1rem;
+    margin: 2rem;
+    color: #465C88;
+    height: 75vh;
+}
+/*#d59bf6*/
+.cs-card{
+    border: 2px solid #FF7A30;
+    padding: 25px;
+    border-radius: 50px;
+    height: 90%;
+}
+
+.small-card{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card{
+    border: 2px solid #FF7A30;
+    padding: 25px;
+    border-radius: 30px;
+    height: 100%;
+}
+
+.extra-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.extra-classes{
+    border: 2px solid #FF7A30;
+    padding: 25px;
+    border-radius: 50px;
+    height: 20%;
+    color: #465C88;
+    width: 80%;
+}
+
+.extra{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
