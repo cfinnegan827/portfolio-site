@@ -46,3 +46,14 @@ body{
     text-decoration: none;
     color: #465C88;
 }
+
+.project-title{
+    text-align: center;
+    color: #465C88;
+}
+.description{
+    margin: 0 auto;
+    color: #465C88;
+    width: 80%;
+    text-align: center;
+}
