@@ -1,5 +1,6 @@
 body{
-    background-color: black;
+    background-color: #141414;
+    font-family: 'Courier New', monospace;
 }
 
 .container{
@@ -8,7 +9,7 @@ body{
     align-items: center; 
 }
 .filler-bar{
-    background-color: #FF7A30;
+    background-color: #FF4B3E;
     height: 1px;
     width: 60%;
 }
@@ -32,32 +33,36 @@ body{
 }
 
 .title{
-    color: #465C88;
+    color: #E0E2DB;
     text-align: center;
     font-size: clamp(2rem, 8vw, 5rem);
 }
 .home-box{
-    border: 2px solid #FF7A30;
+    border: 2px solid #FF4B3E;
     padding: 10px;
     position: absolute;
     left: 5%;
 }
 .home{
     text-decoration: none;
-    color: #465C88;
+    color: #E0E2DB;
 }
 
 .project-title{
     text-align: center;
-    color: #465C88;
+    color: #E0E2DB;
 }
 .description{
     margin: 0 auto;
-    color: #465C88;
+    color: #E0E2DB;
     width: 80%;
     text-align: center;
 }
 
 .code-img{
     width: 80vw;
+}
+a{
+    text-decoration: underline;
+    color: #FF4B3E;
 }
