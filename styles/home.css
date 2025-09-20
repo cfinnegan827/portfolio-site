@@ -81,7 +81,8 @@ body{
   border-radius: 15px;
   text-align: center;
   height: 300px;
-  color: #FF4B3E;
+  color: #E0E2DB;
+  border: 2px solid #FF4B3E;
 }
 
 .description{
