@@ -23,7 +23,23 @@
         <div class="description">
             <h2>
             Growing up cards where a big part of how I spent my free time. My family is a big cards family, so everything from war, go fish, uno, to 
-            screw your neighbor and cribbage where played at almost every family event and then some.
+            screw your neighbor and cribbage where played at almost every family event and then some. I wanted to replicate this into a command line
+            game for one of the games that is popular amongst a majority of the people who play/know card games, blackjack. 
+            <br>
+            My implementation was going to be simple. I was going to start with simple logic first before worrying about outcomes and payouts since 
+            that will lay the groundwork for the rest of the game. I started just with a dealt card, since cards are dealt in every hand but with a 
+            different number of cards per hand based on play I needed something simple that could be universal if one card needed to be dealt. I went
+            with the approach of assuming there are multiple decks being played that way it keeps it even more simple instead of wasting time and space
+            checking and keeping track of already dealt cards, which would be more in line with a poker game rather than blackjack. 
+            <br>
+            Next was dealing two hands, the dealer and player. Each playing person at the "table" is dealt two cards, with the same casino convention
+            of the dealer having one face down card, but we still check if the dealer is dealt blackjack off deal before any action takes place. I 
+            kept track of the face down card by having a simple boolean variable that is set to false and only after the player plays their hand is that
+            boolean value set to true, revealing the actual value and suit and total score of the dealers hand.
+            <br> 
+            As of right now it is very rudamentary with just the classic play style being played, there is no options to double down or split which can
+            be added to the game logic later but as of right now it is traditional play. The score is just kept track in a text file, with simple read and 
+            write logic to obtain the balance and read/write it to the text file.
             </h2>
         </div>
     </body>
