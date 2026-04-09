@@ -1,9 +1,220 @@
 <html>
     <header>
         <style>
-            body {background-color: #141414;}
+            /* body {background-color: #141414;} */
+
         </style>
-        <meta http-equiv="refresh" content="0; url=./pages/home.html">
+        <!-- <meta http-equiv="refresh" content="0; url=./pages/home.html"> -->
+        <link rel="stylesheet" href="index.css">
+        <script>
+            function toggleNav() {
+                document.getElementById("nav").classList.toggle("active");
+            }
+        </script>
     </header>
-    <body></body>
+    <body>
+        <div class="section" id="home">
+            <div class="title-div">
+                    <h1 class="title">Welcome!</h1>
+            </div>
+            <div class="container"><div class="filler-bar"></div></div>
+            <br>
+            <div class="title-links">
+            <div class="resume-box"><a class="resume" href="pages/resume.html">My Resume</a></div>
+                <a class="link" href="https://github.com/cfinnegan827?tab=repositories" target="_blank"><img src="static/github.png" alt="GitHub" /></a>
+                <a class="link" href="https://www.linkedin.com/in/connor-finnegan827" target="_blank"><img src="static/linkedin.png" alt="LinkedIn"></a>
+            </div>
+
+            <br><br><br>
+            <p class="about">
+                    Hi! My name is Connor I am a senior computer science student at Umass Boston. I have a strong interest in backend coding
+                    and embedded systems, making small projects with raspberry pi and making a plant monitoring system using a esp32. I have experience
+                    in a wide range of languages with high proficiency in C, Python, Java. With understanding of C++, Racket, and Javascript and small 
+                    experience with assembly as well as pcb design and pcb assembly. I am currently working as an IT clerk at East Cambridge Savings Bank.
+                    Working on creating and deploying images onto computers, using Ivanti, that are distributed to branches as part of a larger branch conversion project.
+                    Being onsite swapping out the computers. As well as modifying users account in Microsoft Office 365 and Microsoft Active Directory Users
+                    and Computers(ADUC), and facilitated vendor calls regarding teller software support and general hardware support.
+            </p>
+            <br><br>
+            <div class="container"><div class="filler-bar"></div></div>
+            <div id="nav" class="nav">
+                <button class="toggle-btn" onclick="toggleNav()">☰</button>
+                <div class="nav-links">
+                    <a href="#home"><p>Home</p></a>
+                    <a href="#work"><p>Work Experience</p></a>
+                    <a href="#classes"><p>Courses Taken</p></a>
+                    <a href="#projects"><p>Projects</p></a>
+                </div>
+            </div>
+            <br><br>
+        </div>
+
+
+        <div class="section" id="work">
+            <div class="title-div">
+                <h1 class="title">Work Experience</h1>
+            </div>
+            <div class="descriptors">
+                <div class="text">
+                    <h1>East Cambridge Savings Bank </h1>
+                    <h3>IT Clerk | June 2025 - Present</h3>
+                    <ul>
+                        <li>Worked assisting the helpdesk with users ranging from tellers to EVP and SVP's of various departments. 
+                            Ranging from password resets, account lockouts, modyfing user accounts, and general software and hardware 
+                            support relating to various banking jobs.
+                        </li>
+                        <li>Created and deployed machine images using Ivanti. Imaging computers as a part of a branch conversion
+                            project providing new windows 11 computers to all branches. Being hands on at the branches swapping machines.
+                        </li>
+                        <li>Facilitated vendor calls regarding teller software support and general hardware support.</li>
+                    </ul>
+                </div>
+
+                <div class="text">
+                    <h1>Stop and Shop</h1>
+                    <h3>Assistant Customer Service Department Head(ACSDH) | August 2023 - December 2025</h3>
+                    <ul>
+                        <li>Improved customer satisfaction by resolving issues in customers orders and experience quickly and efficiently.</li>
+                        <li>Handle large sums of cash in forms of sensitive transactions such as western union money transfers and money orders</li>
+                        <li>Handle deposits and withdrawals of cash from the cash recycler and maintaing an organized account of all deposits
+                            and withdrawal slips to assist with daily reports.
+                        </li>
+                        <li>Assists in other areas of the frontend to provide coverage and/or assistance when needed, including online shopping,
+                            customer service desk, cashier, and other departments such as file maitenence, bakery, etc.
+                        </li>
+                    </ul>
+                    <h3>Bakery Clerk | July 2021 - August 2023</h3>
+                    <ul>
+                        <li>Prepared baked goods for the following day's morning bake.</li> 
+                        <li>As well as break down load shipments while managing inventory for the bakery department.</li>
+                    </ul>
+                </div>
+
+                <!-- <div class="text">
+                    <h1>City of Medford</h1>
+                    <h3>Lacrosse Clinic | August 2022</h3>
+                    <ul>
+                        <li>Ran a three day lacrosse clinic coaching fifteen children ages 10-12 on the basics of lacrosse</li>
+                        <li>Teaching basic concepts of catching, throwing, and shooting whilst also incorporating games and fun
+                        activities to keep the kids having fun and interested in learning the game.</li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="section" id="classes">
+            <div class="title-div">
+                    <h1 class="title">Courses Taken At UMB!</h1>
+            </div>
+            <div class="container"><div class="filler-bar"></div></div>
+            <br>
+            <div class="descriptors">
+
+                <div class="text">
+                    <h1>CS Courses</h1>
+                    <ul class="courses">
+                        <li>CS 110: Introduction to Computing(Python)</li>
+                        <li>CS 210: Intermediate Computing(Java)</li>
+                        <li>CS 240: Programming in C</li>
+                        <li>CS 220: Applied Discrete Mathematics</li>
+                        <li>CS 285L: Social Issues and Ethics in Computing</li>
+                        <li>CS 310: Advanced Data Strucutres and Alorithms(Python)</li>
+                        <li>CS 341: Computer Architecture and Organization(C,Assembly)</li>
+                        <li>CS 420: Theory of Computation(Coq)</li>
+                        <li>CS 450: Higher Level Languages(Racket)</li>
+                        <li>CS 410: Intro to Software Engineering(Python,Javascript,C++)</li>
+                        <li>CS 444: Operating System(C)</li>
+                        <li>CS 451: Compiliers(Java)</li>
+                        <li>CS 460: Computer Graphics(HTML,CSS,Javascript, WebGL)</li>
+                        <li>CS 446: Computer Networking</li>
+                    </ul>
+                </div>
+                            
+                <div class="text">
+                    <h1>Math Courses</h1>
+                    <ul class="courses">
+                        <li>Math 141: Calculus I</li>
+                        <li>Math 142: Calculus II</li>
+                        <li>Math 260: Linear Algebra</li>
+                        <li>Math 345: Probability and Statistics(R)</li>
+                    </ul>
+                </div>
+
+                <div class="text">
+                    <h1>Physics Courses</h1>
+                    <ul class="courses">
+                        <li>Physics 113: Fundamentals of Physics I</li>
+                        <li>Physics 181: Elementary Physics Lab I</li>
+                        <li>Physics 114: Fundamentals of Physics II</li>
+                        <li>Physics 182: Elementary Physics lab II</li>
+                    </ul>
+                </div>
+
+                <div class="text">
+                    <h1>Misc. Courses</h1>
+                    <ul class="extra">
+                        <li>English 101: Composition I</li>
+                        <li>English 102: Composition II</li>
+                        <li>Spanish 101: Elementary Spanish I</li>
+                        <li>Biology 102: Evolutionary Biology</li>
+                        <li>Economics 102: Intro to Macroeconomics</li>
+                        <li>Labor 111G: Labor and Society</li>
+                        <li>Envsty 270G: Writing and the Envirorment</li>
+                        <li>Cinema 101: Introduction to Cinema Studies</li>
+                        <li>Classics 281: Greek Civilization</li>
+                        <li>American Studies 209: The 1990's</li>
+                        <li>Anthropology 105: Intro to Biological Anthropology</li>
+                        <li>Anthropology 268: Wine and Culture</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="section" id="projects">
+            <div class="title-div">
+                <h1 class="title">Projects</h1>
+            </div>
+            <div class="container"><div class="filler-bar"></div></div>
+            <br>
+
+            <div class="card-container">
+                <a href="pages/rp2040.html" class="card">
+                    <h3>RP2040 Microcontroller</h3>
+                    <p>A homemade RP2040 microcontroller that simulates the functions of a Raspberry Pi Pico. Created using my own PCB design
+                        and assembled myself as well. 
+                    </p>
+                </a>
+
+                <a href="pages/plant.html" class="card">
+                    <h3>Plant Monitoring System</h3>
+                    <p>A school project creating a full stack software application that monitors a plant using an esp32 and various sensors
+                        such as temperature, humidity, soil moisture, with options to grow further with proper time. Using React to create a frontend
+                        site with a python and express.js backend.
+                    </p>
+                </a>
+                <a href="pages/weather.html" class="card">
+                    <h3>Machine Learning Weather Prediction Model</h3>
+                    <p>A begineer Project using python and weather data over the past 15 years to try and accurately predict temperature
+                        highs and lows for a specific day.
+                    </p>
+                </a>
+
+                <a href="pages/blackjack.html" class="card">
+                    <h3>Terminal Blackjack</h3>
+                    <p>A full scale blackjack game that is run in a terminal. Uses python to simulate both player and dealer hands, width
+                        future improvements hoping to include the options to double down, split, and more advanced casino blackjack rules.
+                    </p>
+                </a>
+
+                <a href="pages/audiomesh.html" class="card">
+                    <h3>AudioMesh</h3>
+                    <p>AudioMesh is a project created in my Fall '25 semester in my computer graphics class at UMB. Using three.js and the js package
+                        strudel for audio it creates an interactive envirorment for the user to create their own unique scene.
+                    </p>
+                </a>
+            </div>
+        </div>
+    </body>
 </html>
