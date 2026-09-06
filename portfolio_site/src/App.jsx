@@ -43,9 +43,13 @@ function App() {
       </div>
 
     <div className='work' id='work'>
-      <h1>This is some test text</h1>
       <div className="experience">
-        <h1>Title</h1>
+        <h1>Work Experience</h1>
+        <div className="job">IT Coordinator</div>
+        <div className="old-job">
+           <div className="old">IT Clerk</div>
+            <div className="old">Assistant Customer Service Department Head</div>
+        </div>
       </div>
     </div>
       <div className='travel' id='travel'>
