@@ -9,7 +9,7 @@ function App() {
       <div className='home_container'>
         <div className='home'>
           <div className='title'>
-            <div className='name'><h1>Connor Finnegan</h1></div>
+            <div className='name'><h1>Connor Finnegan<br/>*under construction*</h1></div>
           </div>
           <div className="context">
             <div className='quick_links'>
